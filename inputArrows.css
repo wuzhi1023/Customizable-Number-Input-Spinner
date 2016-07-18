@@ -1,0 +1,54 @@
+///////////////////////////////////////////////////
+//
+// NUMBER INPUT ARROWS
+//
+///////////////////////////////////////////////////
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.quantity {
+    position: relative;
+    width: 90px;
+}
+.quantity .input_arrow_add,
+.quantity .input_arrow_minus {
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    opacity: 0.7;
+    font-size: 28px;
+    margin: 0;
+}
+@media screen and (min-width: 960px) {
+    .quantity input[type=number] {
+        padding-right: 20px;
+        height: 30px;
+        width: 70px;
+    }
+    .quantity .input_arrow_add {
+        display: inline-block;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 5px;
+        top: -3px;
+    }
+    .quantity .input_arrow_minus {
+        display: inline-block;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 5px;
+        top: 8px;
+    }
+}
